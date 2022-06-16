@@ -1,0 +1,447 @@
+:root {
+  --banner-right-padding: 5px;
+  --trend-banner-height: 300px;
+}
+
+.index-container .inner-indexCon .sections .section.sec2 .sec-con {
+  width: 100%;
+  height: auto;
+  border: 0px solid;
+  padding-top: 30px;
+}
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* 실시간 인기 웹툰  */
+
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-realtime {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-realtime::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: var(--sub);
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+}
+
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-realtime > ul.left {
+  flex: 0 0 160px;
+}
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-realtime > ul.left > li {
+  display: inline-block;
+  /* padding-bottom: 10px; */
+}
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-realtime > ul.left > li h2 {
+  /* border: 1px solid; */
+}
+
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-realtime > ul.left > li:nth-child(1) {
+  color: var(--point);
+}
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-realtime > ul.right {
+  flex: 0 0 210px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-realtime > ul.right > li {
+  flex: 0 0 1;
+  cursor: pointer;
+  position: relative;
+  /* font-size: 14px; */
+}
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-realtime > ul.right > li:not(:last-child)::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0.5px;
+  height: 40%;
+  background-color: var(--sub);
+  right: -40%;
+  transform: translateX(-40%);
+  bottom: 50%;
+}
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-realtime > ul.right > li:hover {
+  color: var(--point);
+  font-weight: 700;
+}
+
+/* 성별란 */
+
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-gender {
+  width: 100%;
+  padding: 15px 0;
+  height: auto;
+}
+
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-gender > ul {
+  display: flex;
+  justify-content: flex-start;
+  width: 250px;
+  height: auto;
+}
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-gender > ul > li {
+  flex: 0 0 117px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background-color: var(--sub-point);
+  color: var(--sub);
+  font-weight: 800;
+  font-size: 18px;
+  border-radius: 20px 20px;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-gender > ul > li:nth-child(1) {
+  margin-right: 15px;
+}
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-gender > ul > li:hover {
+  background-color: var(--point);
+  color: #fff;
+}
+
+/* 배너 부분 */
+
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox {
+  width: 100%;
+  max-width: 1020px;
+  height: var(--trend-banner-height);
+  position: relative;
+  overflow: hidden;
+}
+
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox .trend-banner {
+  width: 200%;
+  height: var(--trend-banner-height);
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  transition: left 0.3s;
+}
+
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox .trend-banner > ul {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox .trend-banner > ul > li {
+  flex: 0 0 1;
+  width: 200px;
+}
+
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox .trend-banner > ul > li:not(li.notPadding) {
+  padding-right: var(--banner-right-padding);
+}
+
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox .trend-banner > ul > li img {
+  border-radius: 20px 20px;
+  box-sizing: border-box;
+}
+
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox .trend-banner > ul > li .text-con {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding: 20px 0;
+}
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox .trend-banner > ul > li .text-con span.ranking {
+  width: 20px;
+  font-weight: 800;
+}
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox .trend-banner > ul > li:last-child .text-con > span.ranking {
+  margin-right: 10px;
+}
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox .trend-banner > ul > li .text-con .p-box > p {
+  padding-top: 5px;
+}
+
+/* 화살표 */
+
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-bannerBox .trend-arrow {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  position: absolute;
+  top: 35%;
+  transform: translateY(-35%);
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-bannerBox .trend-arrow span.arrow {
+  display: block;
+  box-sizing: border-box;
+  width: 35px;
+  height: 60px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-bannerBox .trend-arrow span.arrow:hover {
+  opacity: 1;
+}
+
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-bannerBox .trend-arrow span.arrow.left {
+  background: url(../../img/sec2/trend_arrow_left.png) no-repeat 50% / cover;
+}
+.index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-bannerBox .trend-arrow span.arrow.right {
+  background: url(../../img/sec2/trend_arrow_right.png) no-repeat 50% / cover;
+}
+
+/* classList */
+.trendBannerToggle {
+  background-color: var(--main) !important;
+  color: #fff !important;
+}
+
+/* 반응형디자인-------------------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+  :root {
+    --banner-right-padding: 5px;
+    --trend-banner-height: 250px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con {
+    padding-top: 30px;
+  }
+
+  /* 실시간 인기 웹툰  */
+
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-realtime {
+    padding-bottom: 15px;
+    position: relative;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-realtime > ul.left {
+    flex: 0 1 160px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-realtime > ul.right {
+    flex: 0 0 180px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-realtime > ul.right > li {
+    flex: 0 0 1;
+    cursor: pointer;
+    position: relative;
+    /* font-size: 14px; */
+  }
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-realtime > ul.right > li:not(:last-child)::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0.5px;
+    height: 50%;
+    background-color: var(--sub);
+    right: -20%;
+    bottom: 40%;
+  }
+
+  /* 성별란 */
+
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-gender {
+    padding: 10px 0;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-gender > ul {
+    width: 170px;
+  }
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-gender > ul > li {
+    flex: 0 0 80px;
+  }
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-gender > ul > li:nth-child(1) {
+    margin-right: 10px;
+  }
+
+  /* 배너 부분 */
+
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox .trend-banner > ul > li .text-con {
+    padding: 10px 0;
+  }
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox .trend-banner > ul > li .text-con span.ranking {
+    width: 20px;
+    font-weight: 800;
+  }
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox .trend-banner > ul > li:last-child .text-con > span.ranking {
+    margin-right: 10px;
+  }
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox .trend-banner > ul > li .text-con .p-box > p {
+    padding-top: 3px;
+  }
+
+  /* 화살표 */
+
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-bannerBox .trend-arrow {
+    top: 25%;
+    transform: translateY(-25%);
+  }
+
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-bannerBox .trend-arrow span.arrow {
+    width: 20px;
+    height: 30px;
+  }
+
+@media only screen and (max-width: 360px) {
+
+  :root {
+    --banner-right-padding: 5px;
+    --trend-banner-height: 200px;
+  }
+  
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con {
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+    padding-top: 30px;
+  }
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  /* 실시간 인기 웹툰  */
+  
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-realtime {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    position: relative;
+  }  
+  
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-realtime > ul.left {
+    flex: 0 0 160px;
+  }
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-realtime > ul.left > li h2 {
+
+    font-size: 16px;
+  }
+  
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-realtime > ul.right {
+    flex: 0 0 150px;
+  }
+  
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-realtime > ul.right > li { 
+    font-size: 12px;
+  }
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-realtime > ul.right > li:not(:last-child)::after {
+    height: 50%;
+    background-color: var(--sub);
+    right: -6.625px;
+    transform: translateX(0);
+    bottom: 7px;
+  }
+  
+  /* 성별란 */
+  
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-gender {
+    width: 100%;
+    padding: 10px 0;
+    height: auto;
+  }
+  
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-gender > ul  {
+    border: 0px solid;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-gender > ul > li {
+    flex: 0 0 100px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    padding: 10px 0;
+  
+  }
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-gender > ul > li:nth-child(1) {
+    margin-right: 10px;
+  }
+
+  
+  /* 배너 부분 */
+  
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox {
+    width: 100%;
+    max-width: 1020px;
+    height: var(--trend-banner-height);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox .trend-banner {
+    width: 200%;
+    height: var(--trend-banner-height);
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+  }
+  
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox .trend-banner > ul {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox .trend-banner > ul > li {
+    flex: 0 0 1;
+    width: 200px;
+  }
+  
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox .trend-banner > ul > li .text-con {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox .trend-banner > ul > li .text-con span.ranking {
+    width: 20px;
+    font-weight: 800;
+  }
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox .trend-banner > ul > li:last-child .text-con > span.ranking {
+    margin-right: 10px;
+  }
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-con .trend-bannerBox .trend-banner > ul > li .text-con .p-box > p {
+    padding-top: 5px;
+  }
+  
+  /* 화살표 */
+  
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-bannerBox .trend-arrow {
+    
+    top:15%;
+    transform: translateY(-15%);
+    
+    padding: 0 5px;
+  }
+  
+  .index-container .inner-indexCon .sections .section.sec2 .sec-con .trend-bannerBox .trend-arrow span.arrow {
+    width: 30px;
+    height: 45px;
+  }
+  
+}

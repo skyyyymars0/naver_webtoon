@@ -1,0 +1,377 @@
+:root {
+  --sec7GalleryLi: 250px;
+}
+
+.index-container .inner-indexCon .sections .section.sec7 .sec-con {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  margin-top: 10px;
+}
+
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con {
+  flex: 0 1 600px;
+  height: var(--sec7GalleryLi);
+  position: relative;
+  overflow: hidden;
+  /* padding: 0 10px; */
+  box-sizing: border-box;
+  margin-right: 20px;
+}
+
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con .gallery {
+  width: 400%;
+  height: var(--sec7GalleryLi);
+  position: absolute;
+  /* border: 1px solid; */
+  box-sizing: border-box;
+  left: 0;
+  transition: left 0.3s;
+}
+
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con .gallery > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con .gallery > ul > li {
+  height: var(--sec7GalleryLi);
+  flex: 1;
+}
+
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con .bcon {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 10px;
+}
+
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con .bcon .items {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con .bcon .items > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con .bcon .items > ul > li {
+  width: 15px;
+  height: 15px;
+  background-color: var(--sub);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con .bcon .items > ul > li:hover {
+  background-color: var(--point);
+}
+
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con .bcon .items > ul > li:not(:last-child) {
+  margin-right: 5px;
+}
+
+/* ~~~~~~~~~~~~~오른쪽~~~~ */
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con {
+  flex: 0 1 420px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 150px;
+  /* border: 1px solid; */
+}
+
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .top-con {
+  flex: 0 1 200px;
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .top-con .topCon-box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--main); */
+  background: rgb(76, 105, 231);
+  background: linear-gradient(146deg, rgba(76, 105, 231, 1) 0%, rgba(0, 213, 100, 1) 100%);
+  border-radius: 15px;
+  box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: box-shadow 0.2s;
+}
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .top-con .topCon-box:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .top-con .topCon-box p.text {
+  flex: 0 1 1;
+  color: #fff;
+  transition: all 0.2s;
+}
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .top-con .topCon-box p.text:hover {
+  transform: translate(0, -10px);
+}
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .top-con .topCon-box span.icon {
+  flex: 0 1 1;
+}
+
+/* ~~~~~~바텀컨 */
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .bottom-con {
+  flex: 0 1 200px;
+  height: auto;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .bottom-con > a {
+  /* color: ; */
+}
+
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .bottom-con .bottCon-box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  background: linear-gradient(146deg, rgba(255, 255, 255, 1) 0%, rgba(235, 235, 235, 1) 100%);
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: box-shadow 0.2s;
+}
+
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .bottom-con .bottCon-box:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .bottom-con .bottCon-box p.text {
+  transition: all 0.2s;
+}
+.index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .bottom-con .bottCon-box p.text:hover {
+  transform: translate(0, -10px);
+}
+
+/* 반응형디자인-------------------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+  :root {
+    --sec7GalleryLi: 200px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con {
+    padding: 20px 0;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con {
+    flex: 0 1 600px;
+    height: var(--sec7GalleryLi);
+    margin-right: 20px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con .gallery {
+    height: var(--sec7GalleryLi);
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con .gallery > ul > li {
+    height: var(--sec7GalleryLi);
+  }
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con .gallery > ul > li img {
+    height: var(--sec7GalleryLi);
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con .bcon .items > ul > li {
+    width: 15px;
+    height: 15px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con .bcon .items > ul > li:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  /* ~~~~~~~~~~~~~오른쪽~~~~ */
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con {
+    flex: 0 1 420px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 100px;
+    /* border: 1px solid; */
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .top-con {
+    flex: 0 1 200px;
+    width: 100%;
+    height: auto;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .top-con .topCon-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(76, 105, 231);
+    background: linear-gradient(146deg, rgba(76, 105, 231, 1) 0%, rgba(0, 213, 100, 1) 100%);
+    border-radius: 15px;
+    box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: box-shadow 0.2s;
+  }
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .top-con .topCon-box:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .top-con .topCon-box p.text {
+    flex: 0 1 1;
+    color: #fff;
+    transition: all 0.2s;
+  }
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .top-con .topCon-box p.text:hover {
+    transform: translate(0, -10px);
+  }
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .top-con .topCon-box span.icon {
+    flex: 0 1 1;
+  }
+
+  /* ~~~~~~바텀컨 */
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .bottom-con {
+    flex: 0 1 200px;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 15px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .bottom-con > a {
+    /* color: ; */
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .bottom-con .bottCon-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(146deg, rgba(255, 255, 255, 1) 0%, rgba(235, 235, 235, 1) 100%);
+    border-radius: 15px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: box-shadow 0.2s;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .bottom-con .bottCon-box:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .bottom-con .bottCon-box p.text {
+    transition: all 0.2s;
+  }
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .bottom-con .bottCon-box p.text:hover {
+    transform: translate(0, -10px);
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  :root {
+    --sec7GalleryLi: 150px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con {
+    flex: 0 1 6;
+    height: var(--sec7GalleryLi);
+
+    margin-right: 5px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con .gallery {
+    width: 400%;
+    height: var(--sec7GalleryLi);
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con .gallery > ul > li {
+    height: var(--sec7GalleryLi);
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con .bcon {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 10px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con .bcon .items {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con .bcon .items > ul > li {
+    width: 15px;
+    height: 15px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .left-con .bcon .items > ul > li:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  /* ~~~~~~~~~~~~~오른쪽~~~~ */
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con {
+    flex: 0 1 4;
+
+    align-items: flex-end;
+    text-align: center;
+    line-height: 40px;
+    /* border: 1px solid; */
+    font-size: 14px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .top-con {
+    flex: 1;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .top-con .topCon-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .top-con .topCon-box span.icon {
+    display: none;
+  }
+
+  /* ~~~~~~바텀컨 */
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .bottom-con {
+    flex: 1;
+    border-radius: 15px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec7 .sec-con .right-con .bottom-con .bottCon-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

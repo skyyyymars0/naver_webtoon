@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <link rel="icon" href="img/common_img/naver_webtoon_logo_favicon.png" />
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="js/login/login.js" defer></script>
+    <script src="js/login/login_QRcode.js" defer></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <form action="skydo.com" method="post" id="loginForm" name="loginForm">
+        <div class="header">
+          <div class="inner-header">
+            <div class="language-box">
+              <select name="language" id="language">
+                <option value="한국어">한국어</option>
+                <option value="영어">english</option>
+                <option value="중국어간체">中文(简体)</option>
+                <option value="중국어번체">中文(台灣)</option>
+              </select>
+            </div>
+            <h1 class="logo">
+              <a href="index.html"><img src="img/common_img/naver_webtoon_main_logo.png" alt="네이버 웹툰" /></a>
+            </h1>
+          </div>
+        </div>
+        <div class="login-container">
+          <div class="login-inner-con">
+            <div class="sections">
+              <div class="section sec1">
+                <div class="tab-container">
+                  <div class="tab-menu">
+                    <ul>
+                      <li class="tab1">ID로그인</li>
+                      <li class="tab2">일회용 번호</li>
+                      <li class="tab3">QR코드</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents">
+                    <ul>
+                      <li class="tab1">
+                        <div class="login-con">
+                          <div class="top-box">
+                            <div class="id-box">
+                              <span class="icon"
+                                ><img
+                                  src="
+                                img/common_img/person_icon_login.svg"
+                                  alt="로그인 아이디 아이콘"
+                              /></span>
+                              <input type="text" name="userId" id="userId" placeholder="아이디" />
+                            </div>
+                            <div class="pw-box">
+                              <span class="icon"><img src="img/common_img/password_icon.svg" alt="로그인 비밀번호 아이콘" /></span>
+                              <input type="password" name="userPw" id="userPw" placeholder="비밀번호" />
+                            </div>
+                          </div>
+                          <p class="box"></p>
+                          <p class="box"></p>
+                          <div class="middle-box">
+                            <div class="keep-box">
+                              <input type="checkbox" name="keepBox" id="keepBox" />
+                              <label for="keepBox"> </label>
+                              <p>로그인 상태 유지</p>
+                            </div>
+                            <div class="ip-box">
+                              <p>IP보안</p>
+                              <input type="checkbox" name="ipBox" id="ipBox" />
+                              <label for="ipBox"></label>
+                            </div>
+                          </div>
+                          <div class="submit-box">
+                            <input type="submit" value="로그인" />
+                          </div>
+                        </div>
+                      </li>
+                      <li class="tab2">
+                        <div class="one-login">
+                          <p>
+                            네이버앱의
+                            <span>
+                              메뉴 > 설정 > 로그인 아이디 관리 <br />
+                              > 일회용 로그인 번호 받기
+                            </span>
+                            에 보이는 번호를 입력해 주세요.
+                          </p>
+                          <div class="oneNumber-box">
+                            <input type="number" name="oneNumber" id="oneNumber" placeholder="번호를 입력하세요." />
+                          </div>
+                          <div class="submit-box">
+                            <input type="submit" value="로그인" />
+                          </div>
+                        </div>
+                      </li>
+                      <li class="tab3">
+                        <div class="QR-login">
+                          <div class="top-con">
+                            <div class="QR-con">
+                              <a href="http://m.site.naver.com/0W9C5"><img src="https://qrcodethumb-phinf.pstatic.net/20220322_238/1647949342948J3AXd_PNG/0W9C5.png" /></a>
+                            </div>
+                            <div class="timeOut-con">
+                              <p class="text">남은시간</p>
+                              <p class="time"></p>
+                            </div>
+                          </div>
+                          <div class="bottom-con">
+                            <div class="p-box">
+                              <p>
+                                공용 네트워크, 공용 PC라면 안전을 위해 <br />
+                                QR코드로 로그인해주세요.
+                              </p>
+                              <p>
+                                네이버 앱 > 렌즈 를 눌러 QR코드를 스캔하여<br />
+                                보이는 숫자 중 nn를 선택하면 로그인 됩니다.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="section sec2">
+                <div class="sec-con">
+                  <ul>
+                    <li><a href="#">비밀번호 찾기</a></li>
+                    <li><a href="#">아이디찾기</a></li>
+                    <li><a href="join.html">회원가입</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"></div>
+      </form>
+    </div>
+  </body>
+</html>

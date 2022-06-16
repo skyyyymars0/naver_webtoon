@@ -1,0 +1,227 @@
+/* sec2 */
+
+.join-container .inner-joinCon .sections .section.sec2 {
+  width: 100%;
+  height: auto;
+}
+
+.join-container .inner-joinCon .sections .section.sec2 .sec-con {
+  width: 100%;
+  height: auto;
+}
+
+.join-container .inner-joinCon .sections .section.sec2 .sec-con > ul {
+  display: flex;
+  flex-direction: column;
+}
+.join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li {
+  flex: 1;
+  padding: 15px 0;
+}
+
+.join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li label {
+  width: 100%;
+  text-align: start;
+  font-weight: 800;
+}
+/* 이름, 이메일 */
+
+.join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li .name-emailBox,
+.select-box {
+  width: 100%;
+  margin-top: 10px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border: 1px solid var(--sub-point2);
+  border-radius: 10px;
+  outline: none;
+}
+
+.join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li .name-emailBox > input {
+  width: 100%;
+  height: 70px;
+  border: none;
+  outline: none;
+}
+
+/* 생년월일 */
+.join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(2) .birth-box {
+  width: 100%;
+  height: auto;
+  line-height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(2) .birth-box .brirthYear-box {
+  flex: 1;
+  margin-top: 10px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border: 1px solid var(--sub-point2);
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(2) .birth-box .brirthYear-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(2) .birth-box .brirthMonth-box {
+  flex: 1;
+  margin-top: 10px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border: 1px solid var(--sub-point2);
+  border-radius: 10px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(2) .birth-box > .brirthMonth-box select {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(2) .birth-box .brirthDay-box {
+  flex: 1;
+  margin-top: 10px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border: 1px solid var(--sub-point2);
+  border-radius: 10px;
+  outline: none;
+}
+
+.join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(2) .birth-box .brirthDay-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(3) .gender-box {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--sub-point2);
+  border-radius: 10px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(3) .gender-box select {
+  width: 100%;
+  height: 70px;
+  border: none;
+  outline: none;
+}
+
+/* 반응형 */
+@media only screen and (max-width: 768px) {
+  .join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li {
+    flex: 1;
+    padding: 15px 0;
+  }
+
+  /* 이름, 이메일 */
+
+  .join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li .name-emailBox,
+  .select-box {
+    margin-top: 10px;
+    padding: 0 20px;
+  }
+
+  .join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li .name-emailBox > input {
+    height: 60px;
+  }
+
+  .join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(2) .birth-box {
+    line-height: 60px;
+  }
+
+  .join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(2) .birth-box .brirthYear-box {
+    margin-top: 10px;
+    padding: 0 20px;
+    margin-right: 10px;
+  }
+
+  .join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(2) .birth-box .brirthMonth-box {
+    margin-top: 10px;
+    padding: 0 20px;
+    margin-right: 10px;
+  }
+
+  .join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(2) .birth-box > .brirthMonth-box select {
+    height: 60px;
+  }
+
+  .join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(2) .birth-box .brirthDay-box {
+    margin-top: 10px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(3) .gender-box {
+    padding: 0 20px;
+    margin-top: 10px;
+  }
+
+  .join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(3) .gender-box select {
+    height: 60px;
+  }
+}
+
+/* 모바일 */
+@media only screen and (max-width: 360px) {
+  /* sec2 */
+
+  .join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li {
+    flex: 1;
+    padding: 15px 0;
+  }
+
+  /* 이름, 이메일 */
+
+  .join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li .name-emailBox,
+  .select-box {
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+
+  .join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li .name-emailBox > input {
+    height: 60px;
+  }
+
+  /* 생년월일 */
+  .join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(2) .birth-box {
+    line-height: 60px;
+  }
+
+  .join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(2) .birth-box .brirthYear-box {
+    margin-top: 10px;
+    padding: 0 10px;
+    margin-right: 5px;
+  }
+
+  .join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(2) .birth-box .brirthMonth-box {
+    margin-top: 10px;
+    padding: 0 10px;
+    margin-right: 5px;
+  }
+
+  .join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(2) .birth-box .brirthDay-box {
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+
+  .join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(3) .gender-box {
+    padding: 0 10px;
+  }
+
+  .join-container .inner-joinCon .sections .section.sec2 .sec-con > ul > li:nth-child(3) .gender-box select {
+    height: 60px;
+  }
+}

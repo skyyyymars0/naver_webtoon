@@ -1,0 +1,195 @@
+.index-container .inner-indexCon .sections .section.sec6 .sec-con {
+  width: 100%;
+  height: auto;
+}
+
+.index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con {
+  width: 100%;
+  height: auto;
+}
+
+.index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-top-con {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px 0;
+}
+.index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-top-con::after {
+  width: 100%;
+  height: auto;
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: var(--sub);
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-top-con h2.title > span {
+  color: var(--point);
+}
+
+.index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-top-con select {
+  flex: 0 1 90px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid var(--sub-point);
+  /* browser */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../../img/common_img/select_arrow.png) no-repeat 100%;
+  background-size: 20px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-top-con select:focus {
+  outline: none;
+}
+
+/* -------------- banner------------ */
+
+.index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox .chall-banner {
+  width: 100%;
+  /* display: flex; */
+  max-width: 1020px;
+  height: 280px;
+  position: relative;
+}
+
+.index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox .chall-banner .banner-contents {
+  width: 100%;
+  max-width: 1020px;
+  height: 280px;
+  position: absolute;
+  display: none;
+}
+
+.index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox .chall-banner .banner-contents > ul {
+  display: flex;
+  justify-content: space-between;
+}
+.index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox .chall-banner .banner-contents > ul > li {
+  flex: 1;
+}
+.index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox .chall-banner .banner-contents > ul > li:not(:last-child) {
+  padding-right: 10px;
+}
+.index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox .chall-banner .banner-contents > ul > li img {
+  border-radius: 20px;
+}
+.index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox .chall-banner .banner-contents > ul > li .text-con {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox .chall-banner .banner-contents > ul > li .text-con p {
+  padding-top: 5px;
+}
+.index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox .chall-banner .banner-contents > ul > li .text-con p:nth-child(1) {
+  font-weight: 800;
+}
+
+/* js classList */
+
+.clickActive {
+  color: var(--point);
+}
+
+/* 반응형디자인-------------------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+  .index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-top-con {
+    padding: 10px 0;
+  }
+
+  /* -------------- banner------------ */
+
+  .index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox {
+    padding-top: 25px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox .chall-banner {
+    height: 250px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox .chall-banner .banner-contents {
+    height: 250px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox .chall-banner .banner-contents > ul > li {
+    flex: 1;
+  }
+  .index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox .chall-banner .banner-contents > ul > li:not(:last-child) {
+    padding-right: 10px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox .chall-banner .banner-contents > ul > li .text-con {
+    padding: 10px 0;
+  }
+  .index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox .chall-banner .banner-contents > ul > li .text-con p {
+    padding-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .index-container .inner-indexCon .sections .section.sec6 .sec-con {
+    font-size: 12px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-top-con {
+    padding: 10px 0;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-top-con h2.title {
+    font-size: 16px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-top-con select {
+    flex: 0 1 100px;
+    height: 25px;
+  }
+
+  /* -------------- banner------------ */
+
+  .index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox {
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox .chall-banner {
+    width: 100%;
+    /* display: flex; */
+    max-width: 1020px;
+    height: 200px;
+    position: relative;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox .chall-banner .banner-contents {
+    width: 100%;
+    max-width: 1020px;
+    height: 200px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox .chall-banner .banner-contents > ul > li:not(:last-child) {
+    padding-right: 5px;
+  }
+
+  .index-container .inner-indexCon .sections .section.sec6 .sec-con .challenge-con .chall-bannerBox .chall-banner .banner-contents > ul > li .text-con {
+    padding: 10px 0;
+  }
+}
